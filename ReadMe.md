@@ -3,24 +3,16 @@ Comp15 HW6
 December 9, 2014
 
 Project Description: (from assignment)
-Given a word, your program will identify the songs that contain that word. For 
-the basic version of the program you only need to search for a single word. 
-Note: you will not be matching against the title or artist.
+Inputs a database of songs in the format: Artist Title lyrics <BREAK>. 
+Handles any number of songs. The program then waits for input of a word. 
+It will then print out the artist, title, and context of the match. The 
+context consists of a fragment of the lyrics containing the word, in the 
+following form: the five words before the matching word, then the matching 
+word, and then the five words after the matching word.
 
-You will run your program using the command-line, and you will provide the song 
-database as in input file. 
+It does this for the 10 songs in which this word appears the most in order of 
+appearance.
 
-For each matching song, your program should print out the artist, title, and 
-context of the match. The context should consist of a fragment of the lyrics 
-containing the word, in the following form: print the five words before the 
-matching word, then print the matching word, and then print the five words 
-after the matching word.
-
-Clearly, there might be many songs that contain a given word. Part of your 
-job is to rank the matching songs and present only the top 10 best matching 
-songs. Matching songs will be ranked by the number of times the word occurs in 
-the lyrics of a particular song (e.g., if a word occurs more times in one song 
-than in another, the first song is ranked higher).
 
 Data Structure:
 A hash table of pointers to "Word"s stores words in an easily searchable way. 
