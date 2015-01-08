@@ -2,7 +2,8 @@ Morgan Gellert
 Comp15 HW6
 December 9, 2014
 
-Project Description: (from assignment)
+Project Description:
+
 Inputs a database of songs in the format: Artist Title lyrics <BREAK>. 
 Handles any number of songs. The program then waits for input of a word. 
 It will then print out the artist, title, and context of the match. The 
